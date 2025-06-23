@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ProtechDemo.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ProtechDemo.Views.MainWindow"
+        xmlns:views="clr-namespace:ProtechDemo.Views"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ProtechDemo">
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <Grid RowDefinitions="Auto,*" ShowGridLines="True">
+        <DockPanel Margin="8" HorizontalSpacing="20" LastChildFill="False">
+            <TextBlock VerticalAlignment="Center" Text="Protech" DockPanel.Dock="Left" Margin="20 0 0 0" />
+            <ListBox  x:Name="Menu" Theme="{DynamicResource PureCardRadioGroupListBox}" ItemsSource="{Binding MenuBars}">
+                <Interaction.Behaviors>
+                    <EventTriggerBehavior EventName="SelectionChanged">
+                        <InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{Binding #Menu.SelectedItem}"></InvokeCommandAction>
+                    </EventTriggerBehavior>
+                </Interaction.Behaviors>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock  Text="{Binding DisplayName}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel Orientation="Horizontal" Spacing="10" DockPanel.Dock="Right">
+                <Button>
+                    <PathIcon Data="{DynamicResource SemiIconSearch}" />
+                </Button>
+                <Button Content="Cart" />
+                <Button Content="Login" />
+            </StackPanel>
+        </DockPanel>
+        <ContentControl Grid.Row="1" Content="{Binding Content}" />
+    </Grid>
+</Window>

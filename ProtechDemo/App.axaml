@@ -1,0 +1,24 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ProtechDemo.App"
+             xmlns:local="using:ProtechDemo"
+             xmlns:semi="https://irihi.tech/semi"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+        <semi:SemiTheme Locale="zh-CN" />
+    </Application.Styles>
+    
+    <Application.Resources>
+        <SolidColorBrush x:Key="TabItemLinePipePointeroverBorderBrush" Color="#dfe31d"/>
+        <SolidColorBrush x:Key="TabItemLinePipePressedBorderBrush" Color="#dfe31d"/>
+        <SolidColorBrush x:Key="TabItemLineHeaderPointeroverBackground" Color="#dfe31d"/>
+    </Application.Resources>
+             
+</Application>

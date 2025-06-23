@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ProtechDemo/App.axaml" value="ProtechDemo/ProtechDemo.csproj" />
+        <entry key="ProtechDemo/Pages/BestSellersView.axaml" value="ProtechDemo/ProtechDemo.csproj" />
+        <entry key="ProtechDemo/Views/BestSellersView.axaml" value="ProtechDemo/ProtechDemo.csproj" />
+        <entry key="ProtechDemo/Views/CatalogView.axaml" value="ProtechDemo/ProtechDemo.csproj" />
+        <entry key="ProtechDemo/Views/MainWindow.axaml" value="ProtechDemo/ProtechDemo.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,90 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ProtechDemo.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="1500" d:DesignHeight="450"
+             x:DataType="vm:BestSellersViewModel"
+             xmlns:convert="using:ProtechDemo.Converters"
+             x:Class="ProtechDemo.Views.BestSellersView">
+    <UserControl.Resources>
+        <convert:DiscountToVisibilityConverter x:Key="DiscountToVisibilityConverter" />
+        <convert:FavoriteToIconConverter x:Key="FavoriteToIconConverter" />
+    </UserControl.Resources>
+    <Design.DataContext>
+        <vm:BestSellersViewModel/>
+    </Design.DataContext>
+    <Grid ColumnDefinitions="Auto,*" ShowGridLines="True">
+        <StackPanel MinWidth="200" Margin="8" Spacing="10">
+            <TextBlock  Text="BestSellers" FontSize="24" />
+            <Expander Header="Price"></Expander>
+            <Expander Header="Brand"></Expander>
+            <TextBox Watermark="Search brands" />
+            <ListBox 
+                SelectionMode="Multiple,Toggle"
+                Theme="{DynamicResource CardCheckGroupListBox}"
+                ItemsSource="{Binding BrandsItems}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ListBox>
+        </StackPanel>
+        <DockPanel Grid.Column="1" LastChildFill="False" VerticalAlignment="Top" Margin="8">
+            <TabControl  DockPanel.Dock="Left">
+                <TabItem Margin="20" Header="All items">
+                    <ScrollViewer>
+                        <ListBox ItemsSource="{Binding GoodsList}" HorizontalAlignment="Left">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid RowDefinitions="Auto,*" MinWidth="250">
+                                        <!--商品图片展示-->
+                                        <Border CornerRadius="10"  MinHeight="250"  Background="#18181C" Padding="10">
+                                            <Grid RowDefinitions="Auto,*">
+                                                <DockPanel LastChildFill="False" >
+                                                    <Border CornerRadius="15"  Background="#dfe31d" Padding="8"  IsVisible="{Binding Discount, Converter={StaticResource DiscountToVisibilityConverter}}" DockPanel.Dock="Left" VerticalAlignment="Top">
+                                                        <TextBlock Text="{Binding Discount, StringFormat='Sale{0:P0}'}" />
+                                                    </Border>
+                                                
+                                                    <Border CornerRadius="20" BorderThickness="1" BorderBrush="#6D6D6D" Width="40" Height="40" DockPanel.Dock="Right" VerticalAlignment="Top">
+                                                        <TextBlock Text="{Binding Favorite,Converter={StaticResource FavoriteToIconConverter}}" Foreground="White"  FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                                                    </Border>
+                                                </DockPanel>
+                                                
+                                                <Image Grid.Row="0" Source="/Assets/iPhone.png" Margin="10" Width="250" Height="250" ></Image>
+                                            </Grid>
+                                        </Border>
+                                        <!--商品信息展示-->
+                                        <Border Grid.Row="1" Padding="10">
+                                            <StackPanel  Orientation="Vertical" Spacing="5" >
+                                                <DockPanel LastChildFill="False">
+                                                    <TextBlock Text="{Binding Brand}" DockPanel.Dock="Left" VerticalAlignment="Top" />
+                                                    <TextBlock Text="{Binding Score,StringFormat='☆{0}'}" DockPanel.Dock="Right" VerticalAlignment="Top" />
+                                                </DockPanel>
+                                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                                    <TextBlock Text="{Binding Price,StringFormat='${0}'}" />
+                                                    <TextBlock Text="{Binding DiscountPrice,StringFormat='${0}'}" />
+                                                </StackPanel>
+                                                <TextBlock Text="{Binding Name}" />
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel  />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Smartphones"></TabItem>
+                <TabItem Header="Kitchen"></TabItem>
+                <TabItem Header="Game Console"></TabItem>
+            </TabControl>
+            <Button Content="Top rated" DockPanel.Dock="Right" VerticalAlignment="Top"/>
+        </DockPanel>
+    </Grid>
+</UserControl>
