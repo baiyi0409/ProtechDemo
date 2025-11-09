@@ -1,37 +1,37 @@
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Base.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.controls.colorpicker\11.3.1\lib\net8.0\Avalonia.Controls.ColorPicker.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Controls.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.DesignerSupport.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.desktop\11.3.1\lib\net8.0\Avalonia.Desktop.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.diagnostics\11.3.1\lib\net8.0\Avalonia.Diagnostics.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Dialogs.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.fonts.inter\11.3.1\lib\net8.0\Avalonia.Fonts.Inter.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.freedesktop\11.3.1\lib\net8.0\Avalonia.FreeDesktop.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Markup.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Markup.Xaml.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Metal.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.MicroCom.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.native\11.3.1\lib\net8.0\Avalonia.Native.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.OpenGL.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.remote.protocol\11.3.1\lib\net8.0\Avalonia.Remote.Protocol.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.skia\11.3.1\lib\net8.0\Avalonia.Skia.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.themes.fluent\11.3.1\lib\net8.0\Avalonia.Themes.Fluent.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.themes.simple\11.3.1\lib\net8.0\Avalonia.Themes.Simple.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Vulkan.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.win32\11.3.1\lib\net8.0\Avalonia.Win32.Automation.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.win32\11.3.1\lib\net8.0\Avalonia.Win32.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.x11\11.3.1\lib\net8.0\Avalonia.X11.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions.custom\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Custom.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions.draganddrop\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.DragAndDrop.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions.draggable\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Draggable.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions.events\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Events.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactions.responsive\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Responsive.dll
-C:\Users\ZhuanZ\.nuget\packages\avalonia.xaml.interactivity\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactivity.dll
-C:\Users\ZhuanZ\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll
-C:\Users\ZhuanZ\.nuget\packages\harfbuzzsharp\8.3.1.1\lib\net8.0\HarfBuzzSharp.dll
-C:\Users\ZhuanZ\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Base.dll
+C:\Users\Administrator\.nuget\packages\avalonia.controls.colorpicker\11.3.1\lib\net8.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Controls.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.DesignerSupport.dll
+C:\Users\Administrator\.nuget\packages\avalonia.desktop\11.3.1\lib\net8.0\Avalonia.Desktop.dll
+C:\Users\Administrator\.nuget\packages\avalonia.diagnostics\11.3.1\lib\net8.0\Avalonia.Diagnostics.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Dialogs.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.dll
+C:\Users\Administrator\.nuget\packages\avalonia.fonts.inter\11.3.1\lib\net8.0\Avalonia.Fonts.Inter.dll
+C:\Users\Administrator\.nuget\packages\avalonia.freedesktop\11.3.1\lib\net8.0\Avalonia.FreeDesktop.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Markup.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Metal.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.MicroCom.dll
+C:\Users\Administrator\.nuget\packages\avalonia.native\11.3.1\lib\net8.0\Avalonia.Native.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.OpenGL.dll
+C:\Users\Administrator\.nuget\packages\avalonia.remote.protocol\11.3.1\lib\net8.0\Avalonia.Remote.Protocol.dll
+C:\Users\Administrator\.nuget\packages\avalonia.skia\11.3.1\lib\net8.0\Avalonia.Skia.dll
+C:\Users\Administrator\.nuget\packages\avalonia.themes.fluent\11.3.1\lib\net8.0\Avalonia.Themes.Fluent.dll
+C:\Users\Administrator\.nuget\packages\avalonia.themes.simple\11.3.1\lib\net8.0\Avalonia.Themes.Simple.dll
+C:\Users\Administrator\.nuget\packages\avalonia\11.3.1\ref\net8.0\Avalonia.Vulkan.dll
+C:\Users\Administrator\.nuget\packages\avalonia.win32\11.3.1\lib\net8.0\Avalonia.Win32.Automation.dll
+C:\Users\Administrator\.nuget\packages\avalonia.win32\11.3.1\lib\net8.0\Avalonia.Win32.dll
+C:\Users\Administrator\.nuget\packages\avalonia.x11\11.3.1\lib\net8.0\Avalonia.X11.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions.custom\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Custom.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions.draganddrop\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.DragAndDrop.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions.draggable\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Draggable.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions.events\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Events.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactions.responsive\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactions.Responsive.dll
+C:\Users\Administrator\.nuget\packages\avalonia.xaml.interactivity\11.3.0.6\lib\net8.0\Avalonia.Xaml.Interactivity.dll
+C:\Users\Administrator\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll
+C:\Users\Administrator\.nuget\packages\harfbuzzsharp\8.3.1.1\lib\net8.0\HarfBuzzSharp.dll
+C:\Users\Administrator\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.CSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.VisualBasic.dll
@@ -39,8 +39,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Micros
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.Win32.Registry.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\netstandard.dll
-C:\Users\ZhuanZ\.nuget\packages\semi.avalonia\11.2.1.8\lib\net8.0\Semi.Avalonia.dll
-C:\Users\ZhuanZ\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
+C:\Users\Administrator\.nuget\packages\semi.avalonia\11.2.1.8\lib\net8.0\Semi.Avalonia.dll
+C:\Users\Administrator\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Buffers.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Collections.Concurrent.dll
@@ -91,7 +91,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.FileSystem.Watcher.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.IsolatedStorage.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.MemoryMappedFiles.dll
-C:\Users\ZhuanZ\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll
+C:\Users\Administrator\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.Pipes.AccessControl.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.Pipes.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.UnmanagedMemoryStream.dll
@@ -197,5 +197,5 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XmlSerializer.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XPath.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XPath.XDocument.dll
-C:\Users\ZhuanZ\.nuget\packages\tmds.dbus.protocol\0.21.2\lib\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\Administrator\.nuget\packages\tmds.dbus.protocol\0.21.2\lib\net8.0\Tmds.DBus.Protocol.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\WindowsBase.dll

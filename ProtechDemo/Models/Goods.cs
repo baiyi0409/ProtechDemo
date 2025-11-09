@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Avalonia.Media.Imaging;
+using CommunityToolkit.Mvvm.ComponentModel;
 using ProtechDemo.ViewModels;
 
 namespace ProtechDemo.Models;
@@ -8,7 +9,7 @@ public partial class Goods:ViewModelBase
     /// <summary>
     /// 商品图片路径
     /// </summary>
-    [ObservableProperty] private string imageUrl;
+    [ObservableProperty] private Bitmap imageUrl;
     
     /// <summary>
     /// 商品名称

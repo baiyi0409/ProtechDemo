@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:ProtechDemo.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="1500" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="1500" d:DesignHeight="850"
              x:DataType="vm:BestSellersViewModel"
              xmlns:convert="using:ProtechDemo.Converters"
              x:Class="ProtechDemo.Views.BestSellersView">
@@ -14,12 +14,16 @@
     <Design.DataContext>
         <vm:BestSellersViewModel/>
     </Design.DataContext>
-    <Grid ColumnDefinitions="Auto,*" ShowGridLines="True">
-        <StackPanel MinWidth="200" Margin="8" Spacing="10">
-            <TextBlock  Text="BestSellers" FontSize="24" />
-            <Expander Header="Price"></Expander>
-            <Expander Header="Brand"></Expander>
-            <TextBox Watermark="Search brands" />
+    <Grid ColumnDefinitions="Auto,*">
+        <StackPanel MinWidth="300" Margin="10 20" Spacing="15">
+            <TextBlock  Text="BestSellers" FontSize="32" HorizontalAlignment="Left" Margin="20 0 0 0" />
+            <Expander Header="Price" FontSize="22"></Expander>
+            <Expander Header="Brand" FontSize="22"></Expander>
+            <TextBox Watermark="Search brands" CornerRadius="15" Margin="20 0" >
+                <TextBox.InnerLeftContent>
+                    <PathIcon Data="{DynamicResource SemiIconSearch}" />
+                </TextBox.InnerLeftContent>
+            </TextBox>
             <ListBox 
                 SelectionMode="Multiple,Toggle"
                 Theme="{DynamicResource CardCheckGroupListBox}"
@@ -33,40 +37,62 @@
         </StackPanel>
         <DockPanel Grid.Column="1" LastChildFill="False" VerticalAlignment="Top" Margin="8">
             <TabControl  DockPanel.Dock="Left">
-                <TabItem Margin="20" Header="All items">
-                    <ScrollViewer>
+                <TabItem Margin="10 20"  Header="All items">
+                    <ScrollViewer Margin="0 10">
                         <ListBox ItemsSource="{Binding GoodsList}" HorizontalAlignment="Left">
+                            <!-- 设置 ListBoxItem 样式 -->
+                            <ListBox.Styles>
+                                <Style Selector="ListBoxItem">
+                                    <!-- 默认状态：透明背景 -->
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="CornerRadius" Value="10"></Setter>
+                                </Style>
+                                <Style Selector="ListBoxItem:selected">
+                                    <!-- 选中状态：灰色背景 -->
+                                    <Setter Property="Background" Value="#3b3b3e"/>
+                                </Style>
+                                <!-- <Style Selector="ListBoxItem:pointerover"> -->
+                                <!--     ~1~ 选中状态：灰色背景 @1@ -->
+                                <!--     <Setter Property="Background" Value="Transparent"/> -->
+                                <!-- </Style> -->
+                            </ListBox.Styles>
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <Grid RowDefinitions="Auto,*" MinWidth="250">
                                         <!--商品图片展示-->
-                                        <Border CornerRadius="10"  MinHeight="250"  Background="#18181C" Padding="10">
+                                        <Border CornerRadius="10"  MinHeight="250"  Background="#18181c" Padding="10">
                                             <Grid RowDefinitions="Auto,*">
                                                 <DockPanel LastChildFill="False" >
-                                                    <Border CornerRadius="15"  Background="#dfe31d" Padding="8"  IsVisible="{Binding Discount, Converter={StaticResource DiscountToVisibilityConverter}}" DockPanel.Dock="Left" VerticalAlignment="Top">
-                                                        <TextBlock Text="{Binding Discount, StringFormat='Sale{0:P0}'}" />
+                                                    <Border CornerRadius="10"  Background="#dfe31d" Padding="8"  IsVisible="{Binding Discount, Converter={StaticResource DiscountToVisibilityConverter}}" DockPanel.Dock="Left" VerticalAlignment="Top">
+                                                        <TextBlock FontSize="12" Text="{Binding Discount, StringFormat='Sale{0:P0}'}" Foreground="#080808" FontWeight="Bold" />
                                                     </Border>
                                                 
-                                                    <Border CornerRadius="20" BorderThickness="1" BorderBrush="#6D6D6D" Width="40" Height="40" DockPanel.Dock="Right" VerticalAlignment="Top">
+                                                    <Border CornerRadius="20" BorderThickness="1" BorderBrush="#252529" Width="40" Height="40" DockPanel.Dock="Right" VerticalAlignment="Top">
                                                         <TextBlock Text="{Binding Favorite,Converter={StaticResource FavoriteToIconConverter}}" Foreground="White"  FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                                                     </Border>
                                                 </DockPanel>
                                                 
-                                                <Image Grid.Row="0" Source="/Assets/iPhone.png" Margin="10" Width="250" Height="250" ></Image>
+                                                <Border Grid.Row="1" Height="250" Width="250" >
+                                                    <Image Grid.Row="0" Source="{Binding ImageUrl}" Margin="10"   ></Image>
+                                                </Border>
+                                 
                                             </Grid>
                                         </Border>
                                         <!--商品信息展示-->
                                         <Border Grid.Row="1" Padding="10">
                                             <StackPanel  Orientation="Vertical" Spacing="5" >
                                                 <DockPanel LastChildFill="False">
-                                                    <TextBlock Text="{Binding Brand}" DockPanel.Dock="Left" VerticalAlignment="Top" />
-                                                    <TextBlock Text="{Binding Score,StringFormat='☆{0}'}" DockPanel.Dock="Right" VerticalAlignment="Top" />
+                                                    <TextBlock Text="{Binding Brand}" DockPanel.Dock="Left" VerticalAlignment="Top" Foreground="#7a7a7a" />
+                                                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Top">
+                                                        <TextBlock Text="★" Foreground="#dde517" />
+                                                        <TextBlock Text="{Binding Score}" />
+                                                    </StackPanel>
                                                 </DockPanel>
                                                 <StackPanel Orientation="Horizontal" Spacing="10">
-                                                    <TextBlock Text="{Binding Price,StringFormat='${0}'}" />
-                                                    <TextBlock Text="{Binding DiscountPrice,StringFormat='${0}'}" />
+                                                    <TextBlock FontSize="18" FontWeight="600" Text="{Binding Price,StringFormat='${0}'}" />
+                                                    <TextBlock FontSize="15" FontWeight="600" Text="{Binding DiscountPrice,StringFormat='${0:F2}'}" IsVisible="{Binding Discount, Converter={StaticResource DiscountToVisibilityConverter}}" Foreground="#7a7a7a" VerticalAlignment="Bottom" />
                                                 </StackPanel>
-                                                <TextBlock Text="{Binding Name}" />
+                                                <TextBlock Text="{Binding Name}" Foreground="#f6f6f6" />
                                             </StackPanel>
                                         </Border>
                                     </Grid>
@@ -80,11 +106,16 @@
                         </ListBox>
                     </ScrollViewer>
                 </TabItem>
-                <TabItem Header="Smartphones"></TabItem>
-                <TabItem Header="Kitchen"></TabItem>
-                <TabItem Header="Game Console"></TabItem>
+                <TabItem Margin="10 20" Header="Smartphones"></TabItem>
+                <TabItem Margin="10 20" Header="Kitchen"></TabItem>
+                <TabItem Margin="10 20" Header="Game Console"></TabItem>
             </TabControl>
-            <Button Content="Top rated" DockPanel.Dock="Right" VerticalAlignment="Top"/>
+            <Button  DockPanel.Dock="Right" VerticalAlignment="Top" Margin="10 15" Foreground="White">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <PathIcon Data="{DynamicResource SemiIconConfigStroked}"></PathIcon>
+                    <TextBlock Text="Top rated" />
+                </StackPanel>
+            </Button>
         </DockPanel>
     </Grid>
 </UserControl>

@@ -1756,23 +1756,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZhuanZ\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Develop\\ProtechDemo\\ProtechDemo\\ProtechDemo.csproj",
+      "projectUniqueName": "D:\\Develop\\Project\\ProtechDemo\\ProtechDemo\\ProtechDemo.csproj",
       "projectName": "ProtechDemo",
-      "projectPath": "D:\\Develop\\ProtechDemo\\ProtechDemo\\ProtechDemo.csproj",
-      "packagesPath": "C:\\Users\\ZhuanZ\\.nuget\\packages\\",
-      "outputPath": "D:\\Develop\\ProtechDemo\\ProtechDemo\\obj\\",
+      "projectPath": "D:\\Develop\\Project\\ProtechDemo\\ProtechDemo\\ProtechDemo.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\Develop\\Project\\ProtechDemo\\ProtechDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZhuanZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -3,7 +3,7 @@
              x:Class="ProtechDemo.App"
              xmlns:local="using:ProtechDemo"
              xmlns:semi="https://irihi.tech/semi"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Dark">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
@@ -16,9 +16,23 @@
     </Application.Styles>
     
     <Application.Resources>
+        <FontWeight x:Key="TabItemSelectedFontWeight">Light</FontWeight>
+        <SolidColorBrush x:Key="TabItemLineHeaderSelectedForeground" Color="#dfe31d"/>
+        <SolidColorBrush x:Key="TabItemLineHeaderPointeroverBackground" Color="#dfe31d"/>
+        
         <SolidColorBrush x:Key="TabItemLinePipePointeroverBorderBrush" Color="#dfe31d"/>
         <SolidColorBrush x:Key="TabItemLinePipePressedBorderBrush" Color="#dfe31d"/>
-        <SolidColorBrush x:Key="TabItemLineHeaderPointeroverBackground" Color="#dfe31d"/>
+        <SolidColorBrush x:Key="TabItemLinePipeSelectedBackground" Color="#dfe31d"/>
+        
+        <SolidColorBrush x:Key="ExpanderSeparatorBorderBrush" Color="Transparent"/>
+        
+        <SolidColorBrush x:Key="TextBoxFocusBorderBrush" Color="Transparent"/>
+        
+        <!-- <SolidColorBrush x:Key="RadioButtonCardCheckPressedBorderBrush" Color="Transparent"/> -->
+        <SolidColorBrush x:Key="RadioButtonCardCheckedBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="RadioButtonCardCheckDefaultBorderBrush" Color="Transparent"/>
+        <SolidColorBrush x:Key="RadioButtonCardCheckPointeroverBorderBrush" Color="Transparent"/>
+        <SolidColorBrush x:Key="RadioButtonCardCheckPressedBorderBrush" Color="Transparent"/>
     </Application.Resources>
              
 </Application>

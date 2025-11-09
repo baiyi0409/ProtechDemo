@@ -12,29 +12,56 @@
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-    <Grid RowDefinitions="Auto,*" ShowGridLines="True">
-        <DockPanel Margin="8" HorizontalSpacing="20" LastChildFill="False">
-            <TextBlock VerticalAlignment="Center" Text="Protech" DockPanel.Dock="Left" Margin="20 0 0 0" />
-            <ListBox  x:Name="Menu" Theme="{DynamicResource PureCardRadioGroupListBox}" ItemsSource="{Binding MenuBars}">
-                <Interaction.Behaviors>
-                    <EventTriggerBehavior EventName="SelectionChanged">
-                        <InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{Binding #Menu.SelectedItem}"></InvokeCommandAction>
-                    </EventTriggerBehavior>
-                </Interaction.Behaviors>
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock  Text="{Binding DisplayName}" />
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-            <StackPanel Orientation="Horizontal" Spacing="10" DockPanel.Dock="Right">
-                <Button>
-                    <PathIcon Data="{DynamicResource SemiIconSearch}" />
-                </Button>
-                <Button Content="Cart" />
-                <Button Content="Login" />
-            </StackPanel>
-        </DockPanel>
-        <ContentControl Grid.Row="1" Content="{Binding Content}" />
+    <Grid RowDefinitions="Auto,*">
+        <Border Padding="20" Background="#18181c">
+            <DockPanel HorizontalSpacing="20" LastChildFill="False">
+                <!--标题-->
+                <TextBlock VerticalAlignment="Center" Text="Protech" DockPanel.Dock="Left" FontSize="18" />
+                <!--选项列表-->
+                <ListBox  x:Name="Menu" Theme="{DynamicResource PureCardRadioGroupListBox}" ItemsSource="{Binding MenuBars}">
+                    <Interaction.Behaviors>
+                        <EventTriggerBehavior EventName="SelectionChanged">
+                            <InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{Binding #Menu.SelectedItem}"></InvokeCommandAction>
+                        </EventTriggerBehavior>
+                    </Interaction.Behaviors>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <PathIcon Data="{DynamicResource SemiIconAlignLeft}" IsVisible="{Binding $parent[ListBoxItem].IsSelected}" Width="12" Height="12"></PathIcon>
+                                <TextBlock Text="{Binding DisplayName}" FontSize="12" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.Styles>
+                        <Style Selector="ListBoxItem">
+                            <Setter Property="Margin" Value="10 0"></Setter>
+                            <Setter Property="CornerRadius" Value="20"></Setter>
+                        </Style>
+                        <Style Selector="ListBoxItem:selected">
+                            <Setter Property="Foreground" Value="#d5e037"></Setter>
+                        </Style>
+                    </ListBox.Styles>
+                </ListBox>
+                <!--按钮组-->
+                <StackPanel Orientation="Horizontal" Spacing="10" DockPanel.Dock="Right">
+                    <Button Background="Transparent">
+                        <PathIcon Data="{DynamicResource SemiIconSearch}" Foreground="White" Width="14" />
+                    </Button>
+                    <Button Background="Transparent" Foreground="White" >
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <PathIcon Data="{DynamicResource SemiIconCart}" Width="14"></PathIcon>
+                            <TextBlock Text="Cart" VerticalAlignment="Center" FontWeight="Light"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Background="Transparent"  Foreground="White" >
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <PathIcon Data="{DynamicResource SemiIconUser}" Width="14" FontWeight="Light"></PathIcon>
+                            <TextBlock Text="Log in" VerticalAlignment="Center" FontWeight="Light"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        <ContentControl Grid.Row="1" Content="{Binding Content}" Background="#080808" />
     </Grid>
 </Window>
